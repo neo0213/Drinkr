@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+    
+
+body {
+    background-color: rgb(221, 221, 221) !important;
+}
+
+
+.drink {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.section p {
+    color: rgb(120, 120, 120);
+}
+
+.instruc {
+    margin-top: 50px;
+}
+
+.btn-refresh {
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+
+.cont-btn {
+    position: absolute;
+    bottom: 0;
+}

@@ -7,6 +7,10 @@ const glass = document.getElementById('glass')
 const ingredient = document.getElementById('ingredients')
 const instruction = document.getElementById('instruction')
 const btn = document.getElementById('btn')
+const main = document.getElementById('main')
+const load = document.getElementById('load')
+
+
 let ing = []
 window.onload = () => {
     fetchdata();
@@ -17,7 +21,35 @@ btn.onclick = () => {
     ingredient.innerHTML = '';
     ing = []
     fetchdata();
+    hidden();
+    loader();
+    setTimeout(hideloader, 1000)
+    setTimeout(displaymain, 1000)
+    
+
+
+    
+    
+
+
 }
+
+function hidden(){
+    main.classList.add("hidden")
+}
+
+function loader(){
+    load.classList.remove('hidden')
+}
+
+function displaymain(){
+    main.classList.remove("hidden")
+}
+
+function hideloader(){
+    load.classList.add("hidden")
+}
+
 
 
 
